@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download Image"
+        android:layout_margin="25dp"
+        android:layout_gravity="top|center_horizontal" />
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image From Gallery "
+        app:layout_anchor="@id/imageView"
+        android:layout_margin="25dp"
+        android:layout_gravity="top|center_horizontal" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_anchor="@id/btnDownload"
+        android:layout_gravity="bottom"
+        app:layout_anchorGravity="bottom"
+
+        android:layout_margin="10dp" />
+
+</LinearLayout>
